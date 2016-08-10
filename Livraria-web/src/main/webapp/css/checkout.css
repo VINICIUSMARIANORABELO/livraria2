@@ -1,0 +1,99 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body{
+	height:100%;
+
+}
+
+.container{
+	position: relative ;
+	margin: 0 auto;
+	width: 1200px;
+	min-height:100%;
+}
+
+.produto{
+	width:455px;
+	padding: 8px;
+}
+
+.cart-items .produto-preco{
+	width: 105px;
+	padding: 8px;
+}
+.quantidade{
+	width: 180px;
+	padding: 8px;
+}
+.preco-total{
+	width: 100px;
+	padding: 8px;
+}
+
+.item-remove{
+	width: 30px;
+	padding: 8px;
+}
+.produto-nome { 
+	float:left;
+  	width: 286px;
+  	margin-top: 0;
+  	
+}
+.autor {
+    font-size: 12px;
+    color: #b2b2b2;
+}
+
+.quantidade input{
+	text-align: center;
+}
+
+.quantidade a{
+	font-size: 20px;
+	padding: 2px;
+}
+
+.icone-remove{
+	font-size: 15px;
+}
+
+.cart {
+    margin-bottom: 24px;
+    border: 1px solid #b3b2b3;
+}
+
+.cart-items {
+    margin-top: 7px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.cart-items .produto-remove,
+.cart-items .produto-preco,
+.cart-items .quantidade-preco,
+.cart-items .quantidade,
+.cart-items .preco-total{
+  text-align: center;
+}
+
+
+.produto-image{
+	width: 115px;
+	float: left;
+
+}
+
+.produto-image img{
+	width: 105px;
+	height: 135px;
+}
+ 
+
+
+.total-compra{
+	font-size: 17px;
+	font-weight: bold;
+}

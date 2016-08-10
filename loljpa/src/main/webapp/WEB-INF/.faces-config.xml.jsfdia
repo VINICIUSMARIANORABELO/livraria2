@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#Resultado.xhtml" PATH="/Resultado.xhtml"
+  SHAPE="184,80,50,41" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Livro.xhtml" PATH="/Livro.xhtml"
+  SHAPE="256,168,50,41" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#Livro.xhtml:0" NAME="item"
+   PATH="/Livro.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="Resultado::#Resultado.xhtml" NAME="output"
+    PATH="/Resultado.xhtml" TARGET="rules:#Resultado.xhtml"
+    TITLE="Resultado" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#Home.xhtml" PATH="/Home.xhtml"
+  SHAPE="32,129,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#Home.xhtml:0" NAME="item" PATH="/Home.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="Resultado::#Resultado.xhtml" NAME="output"
+    PATH="/Resultado.xhtml" TARGET="rules:#Resultado.xhtml"
+    TITLE="Resultado" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="Livro::#Livro.xhtml" NAME="output1"
+    PATH="/Livro.xhtml" TARGET="rules:#Livro.xhtml" TITLE="Livro" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="Carrinho::#Carrinho.xhtml" NAME="output2"
+    PATH="/Carrinho.xhtml" TARGET="rules:#Carrinho.xhtml"
+    TITLE="Carrinho" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#Carrinho.xhtml" PATH="/Carrinho.xhtml"
+  SHAPE="240,256,50,25" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#Carrinho.xhtml:0" NAME="item"
+   PATH="/Carrinho.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="VerificarPedido::#VerificarPedido.xhtml"
+    NAME="output" PATH="/VerificarPedido.xhtml"
+    TARGET="rules:#VerificarPedido.xhtml" TITLE="VerificarPedido" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#VerificarPedido.xhtml"
+  PATH="/VerificarPedido.xhtml" SHAPE="448,280,50,41" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#VerificarPedido.xhtml:0" NAME="item"
+   PATH="/VerificarPedido.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="VerificarItem::#VerificarItem.xhtml"
+    NAME="output" PATH="/VerificarItem.xhtml"
+    TARGET="rules:#VerificarItem.xhtml" TITLE="VerificarItem" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#VerificarItem.xhtml"
+  PATH="/VerificarItem.xhtml" SHAPE="656,304,50,25"
+  model-entity="JSFProcessGroup" persistent="true"/>
+</PROCESS>
